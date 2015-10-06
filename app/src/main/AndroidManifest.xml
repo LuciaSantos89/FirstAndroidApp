@@ -18,9 +18,18 @@
         </activity>
 
         <provider
-            android:authorities="com.example.analucia.firstandroidapp"
             android:name=".NotesProvider"
-            android:exported="false"/>
+            android:authorities="com.example.analucia.firstandroidapp"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.analucia.firstandroidapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
